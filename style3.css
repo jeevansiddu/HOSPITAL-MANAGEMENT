@@ -8,30 +8,53 @@ body{
     justify-content: center;
     align-items: center;
 }
+.form{
+    
+}
 .whole-cont{
     /* position: absolute; */
-    justify-content: center;
+    /* justify-content: center; */
     /* margin: 15vh 10vw; */
     display: flex;
+    flex-direction: row; 
     border: 2px solid black;
     border-radius: 15px;
     /* box-shadow: 3px black; */
     box-shadow: 5px 10px grey ;
     width: 80%;
+    /* overflow: scroll; */
     height: 80%;
 }
+.cont1,.cont2{
+    width: 50%;
+    height: 100%;
+    
+  }
+  .cont1{
+    overflow: scroll;
+  }
 
 .form{
-    padding-left: 8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2vh 8vw;
 }
-.logo{
-    padding: 10% 0%;
+img{
+    width: 100%;
+    height: 100%;
+}
+input{
+    border: none;
+    border-bottom: 1px solid black;
+    /* margin-bottom: 5%;
+    /* width:60%; */ 
 }
 .creta{
     text-align: center;
     font-weight: bold;
-    font-size: large;
-    /* padding: 10% 0%; */
+    padding: 10% 0%;
 }
 button{
     justify-content: center;
@@ -45,21 +68,6 @@ button{
     /* padding-top: 0%; */
     /* gap: 0.5rem; */
 }
-input{
-    border: none;
-    border-bottom: 1px solid black;
-    /* margin-bottom: 5%;
-    width:60%; */
-}
-
-.cont1,.cont2{
-  width: 50%;
-  height: 100%;
-}
-.cont1{
-    height: 100%;
-}
-
 .cont2 .img-cont {
     height:100%;
     width: 100%;
@@ -69,44 +77,10 @@ input{
     /* background-size: cover; */
     border-radius: 0 15px 15px 0; 
 }
-img{
-    width: 100%;
-    height: 100%;
+span{
+    font-weight: bold;
+    /* padding-left: 10px; */
 }
 .close{
     text-align: center;
-}
-span{
-    font-weight: bold;
-    padding-left: 10px;
-}
-.whole-cont{
-    /* position: absolute; */
-    /* justify-content: center; */
-    /* margin: 15vh 10vw; */
-    display: flex;
-    flex-direction: row;
-    border: 2px solid black;
-    border-radius: 15px;
-    /* box-shadow: 3px black; */
-    box-shadow: 5px 10px grey ;
-    width: 80%;
-    height: 80%;
-}
-.cont1,.cont2{
-    width: 50%;
-    height: 100%;
-  }
-
-.form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-    padding: 2vh 8vw;
-}
-.radio-cont{
-    display: flex;
-    justify-content: space-between;
-    padding: 3%;
 }
